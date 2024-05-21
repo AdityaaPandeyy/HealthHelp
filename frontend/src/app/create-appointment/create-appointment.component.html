@@ -1,0 +1,63 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+
+  <a style="color: white;" class="navbar-brand" href="#">Zaemon Hospitals</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a style="color: white;" class="nav-link active" aria-current="page" href="javascript:void(0);"
+          routerLink="/appointments">Back</a>
+      </li>
+
+
+
+    </ul>
+
+  </div>
+
+</nav>
+
+<div class="container">
+  <hr>
+  <h2 style="text-align: center;margin-top: 20px;">Add Appointment Dashboard</h2>
+  <a style="color: rgb(86, 86, 86); font-size: x-large;">
+    <marquee behavior="scroll" direction="left">
+      Welcome to Add Appointment Dashboard. Please fill the form below and click on submit to add an appointment!!
+    </marquee>
+  </a>
+  <hr>
+  <input type="text" name="search" placeholder="Search">
+  <br>
+  <div class="tableFixHead">
+    <br>
+    <div class="container">
+      <h2 class="text-center">Add New Appointment</h2>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label>Name</label>
+          <input id="name" name="name" placeholder="Enter name" type="text" class="form-control"
+            [(ngModel)]="appointment.name" />
+        </div>
+        <div class="form-group">
+          <label>Age</label>
+          <input id="age" name="age" placeholder="Enter age" type="text" class="form-control"
+            [(ngModel)]="appointment.age" />
+        </div>
+        <div class="form-group">
+          <label>Symptoms</label>
+          <input id="symptoms" name="symptoms" placeholder="Enter symptoms" type="text" class="form-control"
+            [(ngModel)]="appointment.symptoms" />
+        </div>
+        <div class="form-group">
+          <label>Number</label>
+          <input id="number" name="number" placeholder="Enter number" type="text" class="form-control"
+            [(ngModel)]="appointment.number" />
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+    </div>
+    </div>

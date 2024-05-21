@@ -1,0 +1,47 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+
+    <a style="color: white;" class="navbar-brand" href="#">Zaemon Hospitals</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a style="color: white;" class="nav-link active" aria-current="page" href="javascript:void(0);"
+                    routerLink="/medicines">Back</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <hr>
+    <h2 style="text-align: center;margin-top: 20px;">Add Medicine Dashboard</h2>
+    <a style="color: rgb(86, 86, 86); font-size: x-large;">
+      <marquee behavior="scroll" direction="left">
+        Welcome to Add Medicine Dashboard. Please fill the form below and click on submit to add a Medicine!!
+      </marquee>
+    </a>
+    <hr>
+    <input type="text" name="search" placeholder="Search">
+    <br>
+    <div class="tableFixHead">
+      <br>
+      <div class="container">
+        <h2 class="text-center">Add New Medicine</h2>
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group"> 
+                <label>Drug Name</label>
+                <input id="name" name="name" placeholder="Enter name" type="text" class="form-control"
+                  [(ngModel)]="medicine.drugName" />
+              </div>
+              <div class="form-group">
+                <label>Stock</label>
+                <input id="age" name="stock" placeholder="Enter stock" type="text" class="form-control"
+                  [(ngModel)]="medicine.stock" />
+              </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+      </div>
+      </div>
